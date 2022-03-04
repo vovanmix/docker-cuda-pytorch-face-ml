@@ -15,7 +15,6 @@ RUN #pip3 install --ignore-installed Cython
 RUN pip3 install --ignore-installed \
   git+https://github.com/1adrianb/face-alignment
 
-RUN pip3 install --ignore-installed -r requirements.txt
 RUN pip3 install torch==1.10.2+cu113 torchvision==0.11.3+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
 
 
