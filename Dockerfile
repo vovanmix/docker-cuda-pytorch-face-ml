@@ -1,7 +1,5 @@
 FROM nvidia/cuda:11.4.2-cudnn8-devel-ubuntu18.04
 
-WORKDIR /app
-
 # in amazon linux: "sudo yum -y install python3-tkinter", in debian: "apt-get install python3-tk"
 RUN DEBIAN_FRONTEND=noninteractive apt-get -qq update \
  && DEBIAN_FRONTEND=noninteractive apt-get -qqy install python3-pip ffmpeg git less nano libsm6 libxext6 libxrender-dev ffmpeg python3-tk \
